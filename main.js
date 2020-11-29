@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     let temperature = document.querySelector(".temperature");
     let location = document.querySelector(".location");
     let summary =  document.querySelector(".summary");
-    let dangerText = document.querySelector(".danger");
+    let dangerText = document.querySelector("#make-hidden");
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition((position) => {
@@ -24,10 +24,11 @@ window.addEventListener('load', () => {
                     temperature.textContent = `${temp}\xB0 C`;
                     location.textContent = data.name;
                     summary.textContent = data.weather[0].main;
+                    dangerText.style.display = "none";
                 })
 
         })
     }else{
-        dangerText.textContent = "Please enable location access!";
+        return ("Please enable location access!");
     }
 });
