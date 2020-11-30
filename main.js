@@ -29,7 +29,8 @@ window.addEventListener('load', () => {
                     location.innerHTML = `<i class="fa fa-map-marker" style="color : red" aria-hidden="true"></i> ${data.name} <small style="color : gray"> (Approx) </small>` ;
                     // location.textContent = data.name ;
                     summary.textContent = weatherSummary ;
-                    weatherIcon.innerHTML = (weatherSummary == 'Rain') ? `<i class="fas fa-cloud-drizzle"></i>` : null ;
+                    // // weatherIcon.innerHTML = (weatherSummary == 'Rain') ? `<i class="fas fa-cloud-drizzle"></i>` :(weatherSummary === 'Mist') ? `<i class="fas fa-fog"  style="color: gray"></i>` : null;
+                    // weatherIcon.innerHTML = `<i class="fas fa-fog fa-3x"  style="color: gray"></i>`;
                     dangerText.style.display = "none";
                 })
 
