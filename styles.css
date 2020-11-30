@@ -5,7 +5,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: azure;
+    color: white;
 }
 body{
     height: 100vh;
@@ -17,4 +17,14 @@ body{
 }
 .container-fluid{
     text-align: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-body > .card-text, .card-body > .card-title, .card-body > .summary{
+    color: black !important;
 }

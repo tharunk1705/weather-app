@@ -11,19 +11,32 @@
 
     <!-- Custom Stylesheet -->
     <link type="text/css" rel="stylesheet" href="./styles.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
 </head>
 <body>
     <div class="container-fluid">
-        
         <h1>Tharun's Weather App</h1>
         <h3 class="text-danger" id="make-hidden">Please enable location access!</h3>
         <div class="container">
-            <h1 class="location">Chennai</h1>
+            <!-- <h1 class="location">Chennai</h1>
             <div class="container">
                 <h1 class="temperature">34.5</h1>
-                <h3 class="summary"> mostly sunny</h3>
-            </div>
+                <h3 class="summary"> mostly sunny </h3>
+                <span class="weather-icon"><i class="fas fa-sun"></i></span>
+            </div> -->
+            <div class="card" style="width: 18rem;">
+                <img src="weather.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title location">Chennai</h5>
+                  <h1 class="card-text temperature">30.5 C </h1>
+                  <h5 class="summary"> mostly sunny </h5>
+                  <span class="weather-icon"><i class="fas fa-sun"></i></span>
+                </div>
+              </div>
         </div>
     </div>
     <!-- JavaScript Bootstrap -->
